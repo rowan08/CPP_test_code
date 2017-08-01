@@ -11,9 +11,9 @@ class ParentClass {
         int _defaultInt;
 
     public:  
-        ParentClass(int d);        
+        ParentClass(int defaultInt);        
         
-        virtual int GetInt();   
-        virtual int PrintBalance();  
+        virtual int getInt();   
+        virtual int printBalance() = 0;  
 };
 #endif

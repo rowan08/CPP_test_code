@@ -14,7 +14,7 @@ class ChildClass01 : public ParentClass {
     public:  
         ChildClass01(int defaultInt, int childNumber);
         
-        int PrintBalance();
+        int printBalance();
 };
 
 #endif

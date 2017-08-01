@@ -7,7 +7,7 @@ ChildClass01::ChildClass01(int defaultInt, int childNumber) :
         _childNumber = childNumber;        
     }
 
-int PrintBalance() {
-    return GetInt() * _childNumber; 
+int ChildClass01::printBalance() {
+    return getInt() * _childNumber; 
 }
 
