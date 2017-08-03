@@ -1,12 +1,19 @@
+//#include "ChildClass01.h"
 #include "ChildClass01.h"
 #include <iostream>
 
 using namespace std;
 
-int main() {  
-     
-    ChildClass01 *pChecking = new ChildClass01(100, 2);
-    cout << pChecking->printBalance() << endl;
+class MyChild: public ChildClass01 {
+
+    public:
+        MyChild(): ChildClass01(2, 2) {};
+};
+
+int main(){
+    
+    MyChild myDemoObject;   
+    cout << myDemoObject.multiplyByClass() << endl;
 
     return 0;
-} 
+}
